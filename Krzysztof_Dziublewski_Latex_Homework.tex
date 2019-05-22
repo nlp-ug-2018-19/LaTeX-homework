@@ -1,0 +1,143 @@
+\documentclass{article}
+
+\title{My \LaTeX{} Homework}
+\author{Krzysztof Dziublewski}
+\date{21 May 2019}
+
+\usepackage{paracol}
+\usepackage{tipa}
+\usepackage{qtree}
+\usepackage{phonrule}
+\usepackage{polyglossia}
+\usepackage{churchslavonic}
+\setmainlanguage{english}
+\setotherlanguage{churchslavonic}
+\setotherlanguage{arabic}
+\newfontfamily{\cyrillicfont}{Monomakh Unicode TT}[Scale=MatchUppercase]
+\newfontfamily\arabicfont[Script=Arabic]{Noto Naskh Arabic}
+
+
+\begin{document}
+\maketitle
+My interests within Linguistics, NLP and CS:
+\begin{enumerate}
+    \item Text generation
+    \item Game development
+    \item Phonology
+    \item Cognitive linguistics
+    \item Sentiment analysis
+    \item Implicature extraction
+\end{enumerate}
+
+\textipa{"aI "nev@ "n@U w6t t@ seI wen "s2mb@di "A:sks mi @"baUt maI "IntrIsts s@U DIs "teIb@l Is "pr6b@bli nOt D@ m@Ust reprI"zent@tIv \textdoublepipe{} "s@U It "g@Uz \textdoublepipe{} \textsubbridge{s}\textbari{}\textsubbridge{t}u"wA\texttoptiebar{t\textsubbridge{s}}\super jA "mA "CE pO"\textsubbridge{d}Ob\textltailn{}E "g\textsubbridge{d}\textbari{} "mAm "\texttoptiebar{t\textsubbridge{s}}OC "O "sOb\super jjE pO"v\super jjE\texttoptiebar{d\textctz{}}E\texttoptiebar{tC} \textdoublepipe{} "\textsubbridge{z}\super jjA\textsubbridge{d}wEm "\texttoptiebar{d\textctz{}}iCAj "bAr\texttoptiebar{d\textsubbridge{Z}O} "\textsubbridge{s}mA\texttoptiebar{tS}n\textbari{} "Ob\super jjA\textsubbridge{d} "i "x\texttoptiebar{t\textsubbridge{s}}E "mi "CE "\textsubbridge{s}pA\texttoptiebar{tC}\textdoublepipe{} "\textsubbridge{t}\textbari{}lE "mAm f "sum\super jjE \textsubbridge{d}o pOv\super jjE"\texttoptiebar{d\textsubbridge{z}}E\textltailn{}a \textdoublepipe{}}
+\newpage
+This is a syntax tree for the sentence "This has been a very nice walk to her lovely house":
+\newline
+\Tree [.CP [.C' [.C {[decl.]} ] [.TP [.NP [.N' [.N This ] ] ] [.T' [.T has ] [.VP [.V' [.V been ] [.DP [.D' [.D a ] ] [.NP [.N' [.AP [.A' [.AdvP  [.Adv' [.Adv very ] ] ] [.A' [.A nice ] ] ] ] [.N' [.N' [.N walk ] ] [.PP [.P' [.P to ] [.DP [.D' [.D her ] [.NP [.N' \qroof{lovely}.AP [.N' [.N house ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+\newpage
+Kongo Palatalization:
+\vspace{3mm}
+\newline
+\phonb{\phonfeat{+coronal \\ -consonantal}}{\phonfeat{+delayed release \\ -anterior \\ +distributed \\ +strident}}{}{\textipa{i}}
+
+\vspace{3mm}
+Velar Fronting:
+\vspace{3mm}
+\newline
+\phonb{\phonfeat{+dorsal \\ +consonantal}}{\phonfeat{+front \\ -back}}{}{\phonfeat{+syllabic \\ +front}}
+
+\vspace{3mm}
+Final Fricative Devoicing:
+\vspace{3mm}
+\newline
+\phonb{\phonfeat{-sonorant \\ +continuant}}{\phonfeat{-voice}}{}{\#}
+
+\vspace{3mm}
+The Cocke-Asami-Younger Algorithm:
+\[T_{i-1,i} = \big\{ A \, | \, A \rightarrow w_{i}\big\}\]
+\[T_{i,k} = \big\{ A \, | \, A \rightarrow B \, C, \, i < j < k, \, B \in T_{i,j}, \, C \in T_{j,k} \big\}\]
+
+\vspace{3mm}
+And now, some text in Old Church Slavonic:
+
+\foreignlanguage{churchslavonic}
+{Отьчє нашь·
+ижє ѥси на нєбєсѣхъ:
+да свѧтитъ сѧ имѧ твоѥ·
+да придєтъ цѣсар҄ьствиѥ твоѥ·
+да бѫдєтъ волꙗ твоꙗ
+ꙗко на нєбєси и на ꙁємл҄и:
+хлѣбъ нашь насѫщьнꙑи
+даждь намъ дьньсь·
+и отъпоусти намъ длъгꙑ нашѧ
+ꙗко и мꙑ отъпоущаѥмъ
+длъжьникомъ нашимъ·
+и нє въвєди насъ въ искоушєниѥ·
+нъ иꙁбави нꙑ отъ нєприꙗꙁни:
+ꙗко твоѥ ѥстъ цѣсар҄ьствиѥ
+и сила и слава въ вѣкꙑ вѣкомъ
+аминь჻}
+
+And here's the IPA transcription:
+
+\textipa{ot\textsci{}t\textesh{}e na\textesh{}\textsci{}  i\textyogh{}e jesi na nebesax\textbari{}  da zv\~etit\textbari{}  s\~e im\~e dvoje da bridet\textbari{}  ts\ae{}sar\textsuperscript{j}\textsci{}zdvije dvoje da b\~{\textopeno{}}det\textbari{}  vol\textsuperscript{j}a dvoja jako na nebesi i na zeml\textsuperscript{j}i \textgamma{}l\ae{}b\textbari{}  na\textesh{}\textsci{} nas\~{\textopeno{}}\textesh{}t\textsci{}n\textturnm{}i da\textyogh{}d\textsci{}  nam\textbari{}  d\textsci{}n\textsci{}s\textsci{}  i ot\textbari{}pusti nam\textbari{}  dl\textbari{}g\textturnm{}  na\textesh{}\~e  jako i m\textturnm{}  ot\textbari{}pu\textesh{}tajem\textbari{}  dl\textbari{}\textyogh{}\textsci{}nikom\textbari{}  na\textesh{}im\textbari{} i ne v\textbari{}vedi nas\textbari{}  v\textbari{}  isku\textesh{}enije n\textbari{}  izbavi n\textturnm{}  ot\textbari{}  nebrijazni jako dvoje jest\textbari{}  ts\ae{}sar\textsuperscript{j}\textsci{}zdvije i sila i zlava v\textbari{}  v\ae{}k\textturnm{}  v\ae{}kom\textbari{}  amin\textsci{}
+}
+
+And here's today's date in Old Church Slavonic:
+
+\foreignlanguage{churchslavonic}{\cuDate{2019-05-21}}
+
+Here's the same text as the Old Church Slavonic text but in Arabic:
+
+\begin{Arabic}
+أَبَانَا الذِي فِي السَّمَاوَاتِ
+لِيَتَقَدَّسَ اسْمُكَ
+لِيَأْتِ مَلَكُوتُكَ
+لِتَكُنْ مَشِيئَتُكَ فِي الأَرْضِ كَمَا السَّمَاءِ
+اعْطِنَا خُبْزَنَا اليَوْمِيَّ
+اعْفِنَا  فِي مِمَّا عَلَيْنَا فَقَدْ أَعْفَيْنَا نَحْنُ أيَضاً مَنْ
+لَنَا عَلَيْهِ
+وَلاَ تُدْخِلْنَا فِي تَجْرِبَةٍ
+لَكِنْ نَجِّنَا مِنَ الشِّرِّيرِ
+لأَنَّ لَكَ الْمُلْكَ وَالْقُوَّةَ وَالْمَجْدَ إِلَى الأَبَدِ
+آمِين
+\end{Arabic}
+
+\pagebreak
+And here they are side by side:
+\newline
+\vspace{0.5mm}
+\columnratio{0.5}
+\begin{paracol}{2}
+\begin{Arabic}
+لِيَتَقَدَّسَ اسْمُكَ
+لِيَأْتِ مَلَكُوتُكَ
+لِتَكُنْ مَشِيئَتُكَ فِي الأَرْضِ كَمَا السَّمَاءِ
+اعْطِنَا خُبْزَنَا اليَوْمِيَّ
+اعْفِنَا  فِي مِمَّا عَلَيْنَا فَقَدْ أَعْفَيْنَا نَحْنُ أيَضاً مَنْ
+لَنَا عَلَيْهِ
+وَلاَ تُدْخِلْنَا فِي تَجْرِبَةٍ
+لَكِنْ نَجِّنَا مِنَ الشِّرِّيرِ
+لأَنَّ لَكَ الْمُلْكَ وَالْقُوَّةَ وَالْمَجْدَ إِلَى الأَبَدِ
+آمِين
+\end{Arabic}
+\switchcolumn
+\foreignlanguage{churchslavonic}
+{Отьчє нашь·
+ижє ѥси на нєбєсѣхъ:
+да свѧтитъ сѧ имѧ твоѥ·
+да придєтъ цѣсар҄ьствиѥ твоѥ·
+да бѫдєтъ волꙗ твоꙗ
+ꙗко на нєбєси и на ꙁємл҄и:
+хлѣбъ нашь насѫщьнꙑи
+даждь намъ дьньсь·
+и отъпоусти намъ длъгꙑ нашѧ
+ꙗко и мꙑ отъпоущаѥмъ
+длъжьникомъ нашимъ·
+и нє въвєди насъ въ искоушєниѥ·
+нъ иꙁбави нꙑ отъ нєприꙗꙁни:
+ꙗко твоѥ ѥстъ цѣсар҄ьствиѥ
+и сила и слава въ вѣкꙑ вѣкомъ
+аминь჻}
+\end{paracol}
+\end{document}
