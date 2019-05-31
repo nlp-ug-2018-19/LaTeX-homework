@@ -1,0 +1,157 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tipa}
+\usepackage{qtree}
+\usepackage{phonrule}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{ {./pics/} }
+\usepackage{wrapfig}
+\usepackage{CJKutf8}
+
+\title{LaTeX homework}
+\author{Agnieszka Rachlewicz }
+\date{May 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Section 1}
+\begin{enumerate}
+  \item Neurology (brain possibilities).
+  \item Phonology in general.
+  \item Somnology (about dreaming in general, includes lucid dreaming).
+\end{enumerate}
+\section{Section 2}
+
+% aɪm ən ˈɔːl.məʊst ˈtwɛn.ti-faɪv jɪr əʊld ˈstjuː.dənt ɒv ˈɪŋ.ɡlɪʃ fɪˈlɒl.ə.dʒi | maɪˌspeʃ.əl.aɪˈzeɪ.ʃən  ɪz ˈnætʃ.ər.əl  ˈlæŋ.ɡwɪdʒ ˈprəʊ.ses.ɪŋ  |   aɪm ɪn ðə ˈmɪdl ɒv maɪ ˌsek.ənd.dɪˈɡriː ænd maɪ ˈɪn.trəsts   ɑː  ˈlɜː.nɪŋ ˌdʒæp.ənˈiːz |  dɑːnsing   dʒæz  and   ˈfɪɡ.ə ˌskeɪ.tɪŋ wɪtʃ  ɪnˈkluːdz on ˈaɪs ˌskeɪ.tɪŋ | ˈfɪɡ.ə  ˈrəʊ.lə.skeɪ.tɪŋ and off-ice ˈek.sə.saɪzIz/
+English.\newline 
+
+\textipa{/aIm @n "O:l.m@Ust "twEn.ti faIv jI@ @Uld "stju:.d@nt @v "IN.glIS fI"l6l.@\texttoptiebar{\textdyoghlig}i || maI ""spES.@l.aI"zeI.S@n Iz "n\ae \texttoptiebar{\textteshlig}.@r.@l "l\ae \ng.gwI\texttoptiebar{\textdyoghlig} \space "pr@U.sEs.I\ng \space || aIm In \dh @ "mId.l @v maI ""sEk.@nd.dI"gri: | @nd maI "In.tr@sts \textscripta: | "l3:.nI\ng \space ""\texttoptiebar{\textdyoghlig}\ae p.@n"i:z | d\textscripta:nsI\ng \space \texttoptiebar{\textdyoghlig}\ae z | @nd  
+"fIg.@ ""skeI.tI\ng \space wI\texttoptiebar{\textteshlig} In"klu:\texttoptiebar{dz} | 6n aIs ""skeI.tI\ng \space | "fIg.@ "r@U.l@.skeI.tI\ng \space | @nd 6f aIs "ek.s@.saIzIz/}
+\newline \newline
+Polski.
+% Jestem dwudziestoczteroletnią studentką filologii angielskiej, na specjalizacji przetwarzanie języka naturalnego. 
+%Moimi zainteresowaniami są nauka języka japońskiego, tańczenie dżezu oraz jazda figurowa, która obejmuje jazdę na łyżwach, jazdę na łyżworolkach figurowych oraz imitacje czyli ćwiczenia poza lodem.
+\newline
+\newline
+\textipa{/jEstEm dvu\textdctzlig est\textopeno \texttoptiebar{\textteshlig}ter\textopeno let\textltailn  \~\textopeno \space studentk\~\textopeno \space fil\textopeno l\textopeno g\textsuperscript{j}i \~a\ng g\textsuperscript{j}Elsk\textsuperscript{j}ej | na spEcjal\textsuperscript{j}izac\textsuperscript{j}i pSEtfa\textyogh an\textsuperscript{j}e j\~E\~wz\textbari ka naturalnEg\textopeno \space || m\textopeno \textsuperscript{j}imi zaintErEs\textopeno van\textsuperscript{j}ami s\~\textopeno \space | nauka j\~Ez\textbari ka naturalnEg\textopeno \space | t\~a\~j\texttoptiebar{\textteshlig}En\textsuperscript{j}E d\texttoptiebar{\textyogh}Ezu \textopeno raz jazda figur\textopeno va | ktura obEjmujE jazdE na w\textbari\textyogh vax | jazdE na w\textbari\textyogh v\textopeno r\textopeno lkax figur\textopeno v1x | \textopeno raz imitacjE | \texttoptiebar{\textteshlig}1li t\texttoptiebar{\textctc}fi\textteshlig En\textsuperscript{j}a p\textopeno za l\textopeno dEm/}
+
+\section{Section 3}
+%"We will go home at the end of the day." 
+
+\Tree
+[.CP [.C\1 [ (decl.) ].C [.TP [.NP [.N\1 [ We ].N
+]] 
+[ [.T\1 [ [ will ].T  ] 
+[.VP  
+[.V\1 
+[ [ [ go ].V \qroof{home}.NP ] ].V\1 
+[.PP
+[.P\1 [ at ].P
+[.DP
+[.D\1 
+[ the ].D [.NP [.N\1 [ end ].N 
+[.PP [.P\1 [ of ].P 
+[.DP [.D\1 [ the ].D \qroof{day}.NP 
+]]]]]]]]]]]]]].I\1 ]]]
+\newline
+\newline
+\newline
+
+\section{Section 4}
+
+Rule 1: Spirantization
+\newline
+\newline
+\phonc{
+\phonfeat[l]{+stop \\
+--voice}}{
+\phonfeat[l]{--stop \\
++voice\\+fricative}}{
+\phonfeat[l]{+vowel}
+\phold
+\phold
+\phonfeat[l]{+vowel}
+}
+\newline\newline
+
+\textit{A voiceless stop is realized as the corresponding voiced fricative when
+surrounded by vowels.}
+\newline
+\newline
+Rule 2: Vowel Nasalization
+\newline
+
+\phonc{
+\phonfeat[l]{+vowel}
+}{
+\phonfeat[l]{+nasal}
+}{
+\phold
+\phold
+\phonfeat[l]{+nasal}}
+\newline
+\newline
+\textit{A vowel is realized as nasalized when it precedes a nasal consonant.}
+\newline
+\newline
+Rule 3: Kongo Palatalization
+\newline
+
+\phonc{
+\phonfeat[l]{+coronal\\
+--sonorant}
+}{
+\phonfeat[l]{+delayed release\\
+--anterior\\
++distributed\\
++strident}
+}{
+\phold
+\phold
+\space i}
+
+\section{Section 5}
+This linguistic equation is taken from András Kornai's \textit{Mathematical linguistics} (2008) page 36 (47 in the pdf file).
+\newline
+\newline
+3.3
+\begin{align*}
+f(n+1,k+1) &= \sum_{i=1}^{k+1} f(n,i)2^{k+1-i} + f(n,k+1)
+\end{align*}
+
+\section{Section 6}
+%The line \usepackage{CJKutf8} imports CJKutf8 which enables utf8 encoding for Chinese, Japanese and Korean fonts.
+\includegraphics[scale=0.1]{pics/Yuzu1.png}
+\begin{CJK}{UTF8}{min}
+羽生・結弦（1994年12月7日 -- 　）
+\end{CJK} 
+\textipa{/han\textsuperscript{j}\textturnm\textturnm\space j\textturnm\textdzlig\textturnm\textfishhookr\textturnm/} 
+\newline
+
+\begin{CJK}{UTF8}{min}
+羽生・結弦は、宮城県仙台市泉区出身のフィギュアスケート選手（男子シングル）。主要な戦績として、2014年ソチオリンピック・2018年平昌オリンピック2大会連続優勝（男子シングル種目で66年ぶりの2連覇）。
+\begin{wrapfigure}{r}{0.45\textwidth} 
+    \centering
+    \includegraphics[width=0.45\textwidth]{pics/Sochi_2014.jpg}
+\end{wrapfigure}
+つまり、結弦さんはオリンピックの金メダルを二枚勝ちました。
+\newpage
+\newline
+
+最後の写真は今年のファンタジーオンアイスの出演から。
+羽生・結弦さんは私と同じ年に生まれました。彼は私を動かします。
+\end{CJK}
+\newline
+\begin{wrapfigure}{r}{0.35\textwidth} 
+    \centering
+    \includegraphics[width=0.35\textwidth]{pics/Yuzu2.png}
+\end{wrapfigure}
+Yuzuru Hanyu is a figure skater (in single men category) from Izumiku, Sendai, Miyagi Prefecture, Japan. His major achievements(results) are, among others, (after a 66-year break for Japan) 2 consecutive victories in the 2014 Sochi Olympic Winter Games and the 2018 PyeongChang Olympic Winter Games. 
+\newline
+In other words, Yuzuru won (consecutively) 2 Olympic gold medals. \newline
+
+The last picture is from the 2019 Fantasy on Ice performance. Yuzuru Hanyu was born the same year as I. He inspires me.
+\end{document}
