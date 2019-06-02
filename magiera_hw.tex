@@ -1,0 +1,104 @@
+\documentclass{article}
+\usepackage{tipa}
+\usepackage[utf8]{inputenc}
+\usepackage{qtree}
+\usepackage{phonrule}
+\newcommand\oneofl[1]{\ensuremath{\left\{\begin{tabular}{l} #1 \end{tabular}\right.}}
+\usepackage{tipa}
+
+\title{\LaTeX{} homework}
+\author{Mateusz Magiera }
+\date{1st June  2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This file contains one of the best LaTeX homework that ever came from under a human hand. The first section presents a list o my computer and linguistic interest. The second section consists of two phonetic  transcriptions: one in English, and the other one in Polish. Third section presents a sentence in form of a tree. In section number four one may find several phonological rules, and the last section number five presents few mathematical equations.
+\section{Section 1}
+\begin{enumerate}
+   \item The list of my favourite topics in computer science:
+   \begin{itemize}
+     \item Newest developments of computer science.
+     \item Hardware updates.
+     \item Video games.
+     \item How technology changes our lives.
+     \item How technology has changed throughout years.
+   \end{itemize}
+   \item The complete list of my favourite topic in linguistics:
+   \begin{itemize}
+       \item phonetics
+       \item phonology
+       \item semantics
+       \item syntax
+   \end{itemize}
+\end{enumerate}
+
+\newpage \section{Section 2}
+ English transcription:\newline
+\textipa{[mAI neIm Iz `maeTju:. AI `st2di `naetSr9l `laeNgwIdZ `prA9VsEsIN aet T9 ju:nI`V9sItI aV gdansk.aI aem `tw9nti Tri ji9z 9Vld. AI k2m fr6m 9 smO:l `vIlIdZ In 9 `mIdl `p9Vl9nd. AI k2r9ntli w3:k aet T9 `we9haVs b2t w3n aI gr9V 2p aI w6nt tu: bi: 9 `prEzId9nt 6v T9 jV`naItId steIts, maI `h6biz A: `m9Vstli k9m`pju:t9z b2t `O:ls9V spO:t, `mju:zIk aend `mEni `2T9 TINz.
+]}
+
+Polsih transcription:\newline
+\textipa{[mam na im\super jE matEu\textrtails. Od \t{tS}tErEx lat stud\super jE na u\textltailn IvErsitE\t{tC}E gda\textltailn skim. ObE\t{ts}NE stud\super jE p\textrtails Etfa\textrtailz aNE j\~e\~wzika naturalnEgo. Mam dva\t{d\textrtailz}EC\t{tC}a t\textrtails i lata. pOxO\t{dz}\~w z mawEj m\super jEjs\t{ts}OvOC\t{tC}i f CrOtkOvEj pOls\t{ts}E. intErEsujE(\~w) CE(\~w) kOmputErami, grami vidEO, muzik\~O\~w Oras spOrtEm. Ostat\textltailn imi \t{t\textrtails}asi v\super jE\textltailn k\textrtails\~O\~w \t{t\textrtails}E(\~w)C\t{tC} mOjEgO vOlnEgO pOCf\super jEn\t{ts}am na pOgwEmb\super ja\textltailn E mOjEj v\super jE\t{dz}i z zakrEsu prOgramOba\textltailn ia, sEmantiki Oraz na\textrtailz En\t{d\textrtailz}i lingvist\t{it\textrtails}nix ]}
+
+\section{Section 3}
+Mary insulted her husband after reaizing he had an affair with his secretary
+\Tree [.CP [.TP NP(Mary) [.VP insulted  [.DP(her) [.NP(husband) [.PP P(after) [.CP [.TP NP(PRO) [.VP V(realizing) [.CP [.TP NP(her) [.VP V(had) [.DP D(an) [.NP N(affair) [.PP P(with) [.DP D(her) .[.NP N(secretary  ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+\section{Section 4}
+Bunch of phonetic rules.\newline
+\newline
+\newline
+\textbf{Spirantization}
+
+\newline
+\phonb{\phonfeat{+stop \\ -voice} }{\phonfeat{+voice \\ -stop \\ +fricative} }{\phonfeat{+vowel}}{\phonfeat{+vowel} }
+\newline
+\newline
+    
+
+\newline
+\phonb{\phonfeat{+consonant \\ +nasal }}{\phonfeat{+short} }{{}}{\phonfeat{+consonat \\ -voice}}\newline
+\newline
+\newline
+ \vspace {8mm}Final Fricative Devoicing:
+\newline
+\vspace{8mm}\phonb{\phonfeat{-sonorant \\ +continuant}}{\phonfeat{-voice}}{}{\#}
+
+
+
+
+
+\newpage \section{Section5}
+Those equations, besides the Euler's equation, has nothing in common with NLP. These are random equations that I found in the Inthernet. 
+
+First equation:\begin{equation} \label{eq1}
+\begin{split}
+A & = \frac{\pi r^2}{2} \\
+& = \frac{1}{2} \pi r^2
+\end{split}
+\end{equation}\newline
+
+This equation \ref{eu_eqn} is known as the Euler equation :\par \begin{equation} \label{eu_eqn}
+e^{\pi i} + 1 = 0
+\end{equation}
+Another example of an equation: \begin{multline*}
+p(x) = 3x^6 + 14x^5y + 590x^4y^2 + 19x^3y^3\\ 
+- 12x^2y^4 - 12xy^5 + 2y^6 - a^3b^3
+\end{multline*}\newline
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
