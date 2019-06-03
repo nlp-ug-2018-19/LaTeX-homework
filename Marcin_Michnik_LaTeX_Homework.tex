@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tipa}
+\usepackage{qtree}
+\usepackage{tikz-qtree}
+\usepackage{phonrule}
+\usepackage{physics}
+\title{LaTeX Homework}
+\author{Marcin Michnik}
+\date{May 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Section1}
+My favourite topics in Computer Science and Linguistics:
+\begin{enumerate}
+\item machine learning
+\item genetic algorithms
+\item programming
+\item narrow AI projects
+\item phonology
+\item speech synthesizers
+\item language resources
+\end{enumerate}
+
+\section{Section2}
+In English:
+\newline
+\textipa{/"maI "neIm Iz "martCin @n aI "st2dI "n\ae tS@r@l "l\ae Ngw@dZ "pr@UsesiN @t D@ "junIv@rsIti @v "gdA\textltailn sk || bI"fO: "D\ae t | aI @"tend@d "INglIS "st2diz In kO"Salin | w@: aI "h@Und maI  "l@aNgw@dZ "skIlz || In maI "sp@: "taIm aI "traI t@ "l@:n k@m"pjUt@ "l\ae Ngw@dzIz "s2tS \ae z ejtStiemel | sieses \ae nd si pl2s pl2s ||/}
+\newline
+\newline
+In Polish:
+\newline
+\textipa{/"gram "ruv\textltailn EZ na gi"taZE ElEk"tr1\texttoptiebar{t}{S}nEj v zEs"pOlE/}
+\newline
+
+%My name is Marcin and I study Natural Language Processing at the University of Gdańsk. Before that, I attended English studies in Koszalin, where I honed my language skills. In my spare time I try to learn computer languages such as HTML, CSS and C++.
+%Gram również na gitarze elektrycznej w zespole.
+
+
+\newpage
+\section{Sentence 
+\small - We told you travelling with kids would be a terrible mistake.}
+\begin{tree1}
+%\tikzset{edge from parent/.style=
+%{draw,
+%edge from parent path={(\tikzparentnode.south)
+%-- +(0,-8pt)
+%-| (\tikzchildnode)}}}
+\newline
+\tiny
+\qtreecenterfalse
+
+\Tree[.CP [.C' [.C decl. ] [.TP [.NP I ] [.T' [.T past 1p.s. ] [.VP [.V' [.V tell ] [.Np you ] [.CP [.C' [.C decl. ] [.TP [.CP  [.C' [.C decl. ] [.TP [.PRO ] [.T' [.T /nothing/ ] [.VP [.V' [.V' [.V travelling ] ] [.PP [.P' [.P with ] [.NP [.N' [.DP her ] [.N' [.N kids ] ] ] ] ] ] ] ] ] ] ] ] [.T' [.T would ] [.VP [.V' [.V be ] [.DP [.D' [.D a ] [.NP [.N' [.AP terrible ] [.N' [.N mistake ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+
+%We told you travelling with kids would be a terrible mistake. Drawn on paper
+\end{tree1}
+\section{Section4}
+%phonrule - 3 phonological rules, screenshots on desktop
+\begin{itemize}
+    \item Tapping:
+        \newline
+        \phonb{/t/}{[\textipa{R}]}{\phonfeat{+vowel}}\phonfeat{+vowel\\ -stress}
+    \newline
+    \item Spirantization:
+        \newline
+        \phonl{\phonfeat{+stop \\ -voice}}{\phonfeat{+voice \\-stop \\+fricative}}{\phonfeat{+vowel}}{\phonfeat{+vowel}}
+    
+    \item Nasalization:
+        \newline
+        \phonr{\phonfeat{+vowel}}{\phonfeat{+nasal}}{\phonfeat{+nasal}}
+\end{itemize}
+\section{Section5}
+
+\begin{math}
+f(n+1,k+1)=\sum\limits_{i=1}^{k+1}f(n,i)2^k^+^1^-^i+f(n,k+1)
+\end{math}
+
+
+\section{Section6 - physics package}
+
+\begin{physics}
+\laplacian[\Psi+\tall]\pdv[n]{f}{x}=\fdv{V}(E-TS)+\fdv*{F}{x}
+\end{physics}
+
+
+\end{document}
