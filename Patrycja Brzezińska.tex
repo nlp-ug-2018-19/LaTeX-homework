@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{phonrule}
+\usepackage{tikz-qtree}
+\usepackage{tipa}
+\usepackage{amsmath}
+
+\title{LaTeX assignment}
+\author{Patrycja Brzezińska}
+\date{May 2019}
+\usepackage[style=authoryear]{biblatex}
+\addbibresource{Moja biblioteka.bib}
+
+\begin{document}
+\maketitle
+\section{Section 1}
+My favorite topics in linguistics:
+\begin{itemize}
+  \item Syntax
+  \item Pragmatics
+  \item Semantics
+  \item Phonology
+  \item Morphology
+\end{itemize}
+
+\section{Section 2}
+\begin{IPA}
+/ maI neIm  Iz p\textturnv tr\textbari \texttslig j\textturnv \ \ae nd aI w\textturnscripta z bO:n In tt\:sev | wI\textteshlig \ Iz \textschwa \ sIti nI\textschwa \ D\textschwa \ nO:T E\textdyoghlig \ \textturnscripta v ˈp\textschwa Ul\textschwa nd || It leIz saUT \textturnscripta v gda\textltailn sk, we\textschwa r aI h\ae v biːn ˈst\textturnv diIN ˈn\ae \textteshlig r\textschwa l ˈl\ae NgwI:\textdyoghlig \ ˈpr\textschwa UsEsIN || mOjE hObbi tO t\:s\textbari ta\textltailn E kC\~O\:zek | \:st\:sEgul\textltailn E mwO\textdctzlig E\:zOv\textbari G lub fantast\textbari ki || v t\:saCE vOln\textbari m sp\~E:\textdzlig am t\:sas z GwOpak\super jEm lub p\:z\textbari ja\texttctclig uwm\super ji zE stud\super juv
+
+\end{IPA}
+
+\section{Section 3}
+\Tree [.CP [.C' [.C decl ] [.TP [.NP [.N' [.PP [.P' [.P on ] [.NP \edge[roof]; {economy} ] ] ] ] [.N' [.N Experts ] ] ] ] [.T' [.T are ] [.VP [.V' [.V disccusing ] [.NP [.N' [.AP \edge[roof]; {new} ] [.N' [.PP [.P' [.P for ] [.DP [.D' [.D the ] [.NP \edge[roof];{citizens} ] ] ] ] ] [.N taxes ] ] ] ] ] ] ] ] ] ]
+
+\section{Section 4}
+/l/ Dentalization
+\begin{IPA}
+
+\phonb{\phonfeat{\textipa{l}}
+}{[\textipa{\|[\textltilde]}}{} {\textipa{T}} }
+\end{IPA}
+\newline
+Tapping
+\begin{IPA}
+
+\phonb{\phonfeat{\textipa{t}}
+}{\textipa{[R]}}{\phonfeat{+vowel}} {\phonfeat{+vowel \\ -stress}} }
+\end{IPA}
+\newline
+/d/ Spirantization
+\begin{IPA}
+
+\phonb{\phonfeat{\textipa{d}}
+}{\textipa{[D]}}{\phonfeat{+vowel}}{}
+\end{IPA}
+\section{Section 5}
+\delta (X)=p(\alpha_0)\neq p(\alpha_0)+ p(\alpha \beta)=\delta (X\cap L) + \delta (X \backslash L)
+\end{document}
