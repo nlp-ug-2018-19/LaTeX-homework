@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage{tipa}
+\usepackage[utf8]{inputenc}
+\usepackage{qtree}
+\usepackage{phonrule}
+\newcommand\oneofl[1]{\ensuremath{\left\{\begin{tabular}{l} #1 \end{tabular}\right.}}
+\usepackage{tipa}
+\usepackage{ulem}
+
+
+\title{\LaTeX{} homework}
+\author{Mateusz Magiera }
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This file contains one of the best LaTeX homeworks that ever came from under a human hand. The first section presents a list of my computer and linguistic interest. The second section consists of two phonetic  transcriptions: one in English, and the other one in Polish. Third section presents a sentence in form of a tree. In section number four one may find several phonological rules, and the last section number five presents a few mathematical equations.
+\section{Section 1}
+\begin{enumerate}
+   \item The list of my f@vourite topics in computer science:
+   \begin{itemize}
+     \item Newest developments of computer science.
+     \item Hardware updates.
+     \item Video games.
+     \item How technology changes our lives.
+     \item How technology has changed throughout years.
+   \end{itemize}
+   \item The complete list of my f@vourite topic in linguistics:
+   \begin{itemize}
+       \item phonetics
+       \item phonology
+       \item semantics
+       \item syntax
+   \end{itemize}
+\end{enumerate}
+
+\newpage \section{Section 2}
+ English transcription:\newline
+\textipa{[mAI neIm Iz "m\ae Tju: AI "st2di "n\ae tSr9l "l\ae NgwIdZ "prAVsEsIN \ae t D@ ju:nI"V9sItI @v gdansk aI \ae m "tw9nti Tri ji9z 9Vld AI k2m fr6m 9 smO:l "vIlIdZ In 9 "mIdl "p9Vl9nd AI k2r9ntli w3:k \ae t D@ `we9h@vs b2t w3n aI gr9V 2p aI w6nt tu: bi: 9 `prEzId9nt 6v D@ jV"naItId steIts, maI "h6biz A: "m9Vstli k9m"pju:D@z b2t "O:ls9V spO:t, "mju:zIk \ae nd "mEni "2D@ TINz.
+]}
+
+Polsih transcription:\newline
+\textipa{[mam na im\super j\~E matEuS Od \t{tS}tErEx lat stud\super juj\~E na u\textltailn IvErsitE\t{tC}E gda\textltailn scim ObE\t{ts}\textltailn E stud\super juj\~E pSEtfaZa\textltailn E j\~Ezika naturalnEgO mam dva\t{dz\super j}EC\t{t\~C}a \t{tS}i lata pOxO\t{dz}\~e z mawEj m\super jEjs\t{ts}OvOC\t{ts}i f CrOtkOvEj pOls\t{ts}E intErEsuj\~E  C\~E kOmputErami grami vidEO muzik\~O Oras spOrtEm Ostat\textltailn imi \t{tS}asi v\super jENkSOC\t{tC} mOjEgO vOlnEgO \t{tS}asu  pOCf\super j\~E\t{ts}am na pOgw\~Eb\super ja\textltailn E mOjEj v\super jE\t{dz}i z zakrEsu prOgramOva\textltailn a sEmantiki Oras naZE\textltailn \t{d\textrtailz}i lingvist\t{itS}nix ]}
+
+\newpage \section{Section 3}
+\Tree [.CP [.C' [.C {[declarative]} ] [.TP [.NP [.N' [.N This ] ] ] [.T' [.T was ] [.VP [.V' [.V \sout{was} ] [.DP [.D' [.D a ] ] [.NP [.N' [.AP [.A' [.AdvP  [.Adv' [.Adv very ] ] ] [.A' [.A exciting ] ] ] ] [.N' [.N' [.N trip ] ] [.PP [.P' [.P to ] [.NP [.N' [.N Paris ]  ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+This was a very exciting trip to Paris
+
+\newpage \section{Section 4}
+Bunch of phonetic rules.\newline
+\newline
+\newline
+\textbf{Spirantization}
+
+\newline
+\phonb{\phonfeat{+stop \\ -voice} }{\phonfeat{+voice \\ -stop \\ +fricative} }{\phonfeat{+vowel}}{\phonfeat{+vowel} }
+\newline
+\newline
+    
+
+\newline
+\phonb{\phonfeat{+consonant \\ +nasal }}{\phonfeat{+short} }{{}}{\phonfeat{+consonat \\ -voice}}\newline
+\newline
+\newline
+ \vspace {8mm}Final Fricative Devoicing:
+\newline
+\vspace{8mm}\phonb{\phonfeat{-sonorant \\ +continuant}}{\phonfeat{-voice}}{}{\#}
+
+
+
+
+
+\newpage \section{Section5}
+Those equations, besides the Euler's equation, has nothing in common with NLP. These are random equations that I found in the Inthernet. 
+
+First equation:\begin{equation} \label{eq1}
+\begin{split}
+A & = \frac{\pi r^2}{2} \\
+& = \frac{1}{2} \pi r^2
+\end{split}
+\end{equation}\newline
+
+This equation \ref{eu_eqn} is known as the Euler equation :\par \begin{equation} \label{eu_eqn}
+e^{\pi i} + 1 = 0
+\end{equation}
+Another example of an equation: \begin{multline*}
+p(x) = 3x^6 + 14x^5y + 590x^4y^2 + 19x^3y^3\\ 
+- 12x^2y^4 - 12xy^5 + 2y^6 - a^3b^3
+\end{multline*}\newline
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
