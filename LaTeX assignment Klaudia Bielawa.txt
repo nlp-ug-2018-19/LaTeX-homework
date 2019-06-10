@@ -1,0 +1,62 @@
+﻿\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{phonrule}
+\usepackage{forest}
+\usepackage{tipa}
+\usepackage{amsmath}
+
+\title{LaTeX assignment}
+\author{Klaudia Bielawa}
+\date{June 2019}
+\usepackage[style=authoryear]{biblatex}
+
+\begin{document}
+\maketitle
+
+\section{Section 1}
+My favorite topics in linguistics:
+\begin{itemize}
+  \item Semantics
+  \item Phonology
+  \item Morphology
+\end{itemize}
+
+\section{Section 2}
+\begin{IPA}
+
+maj nem ɪz klɔdiə aj lajv ən gədænsk || aj hæv twɛnti fajv jɪrz old | aj wərk ən dʒəmp sɪti ɪt ɪz e træmpəlin park || aj lajk kantækt wɪð awər gɛsts | aj ləv maj ko wərkərz ðe ar friki aj ləv bʊks ðæt ar rɪtən baj stivən kɪŋ|
+
+\end{IPA}
+
+\section{Section 3}
+\newcommand{\SB}[1]{$[\text{#1}]$}
+\begin{forest}
+[.TP [.NP The[Adj.P old][tree]] [.VP[.V swayed][.PP[.P in][.NP [the][wind]]]]]
+\end{forest}
+
+\section{Section 4}
+/l/ Dentalization
+
+\begin{IPA}
+
+\phonb{\phonfeat{\textipa{l}}
+}{[\textipa{\|[\textltilde]}}{} {\textipa{T}} }
+\end{IPA}
+\newline
+Tapping
+\begin{IPA}
+
+\phonb{\phonfeat{{t}}
+}{\textipa{[R]}}{\phonfeat{+vowel}} {\phonfeat{+vowel \\ -stress}} }
+\end{IPA}
+\newline
+/d/ Spirantization
+\begin{IPA}
+
+\phonb{\phonfeat{{d}}
+}{\textipa{[D]}}{\phonfeat{+vowel}}{}
+\end{IPA}
+\section{Section 5}
+\delta (X)=p(\alpha_0)\neq p(\alpha_0)+ p(\alpha \beta)=\delta (X\cap L) + \delta (X \backslash L)
+\end{document}
