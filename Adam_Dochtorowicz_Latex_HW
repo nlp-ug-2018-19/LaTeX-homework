@@ -1,0 +1,127 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{phonrule}
+\usepackage{tikz-qtree}
+\usepackage{tipa}
+\usepackage{amsmath}
+\usepackage{lipsum}
+\usepackage[margin=2.54cm, left=3.81cm, includefoot]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{pgfplots}
+\usepackage{setspace}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{2pt}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+    \line(1,0){300}\\
+    [5mm]
+    \huge{\bfseries LaTeX HW}\\
+    [2mm]
+    \line(1,0){250}\\
+    [1.5mm]
+    \textsc{\LARGE Gdansk University}\\
+    [2mm]
+    \textsc{\Large Different functions of LaTeX}\\
+    [13cm]
+    \end{center}
+    \begin{flushright}
+    \textsc{\large Adam Dochtorowicz}\\
+    NLP student\\
+    \# 234564\\
+    June 11, 2019
+    \end{flushright}
+\end{titlepage}
+\cleardoublepage
+
+\tableofcontents
+\thispagestyle{empty}
+\cleardoublepage
+
+\section{Favorite topics}
+\subsection{Linguistics}
+\begin{itemize}
+    \item Phonology
+    \item Phonetics
+    \item Semantics
+    \item Sociolinguistics
+    \item Forensic Linguistics
+\end{itemize}
+
+\subsection{Computer Science}
+\begin{itemize}
+    \item Machine Learning
+    \item Data Science
+    \item AI
+\end{itemize}
+
+\section{\textipa{f@"nEtIk tr\ae nskrIpS@n}}
+\subsection{\textipa{"INglIS tr\ae nskrIpS@n}}
+\textipa{| haI maI neIm Iz "\ae d@m | aI T\super jINk Its f2n t@ "k\super h@Ud In "leI""tEk | "k\super h3r@ntli aIm "st2dIN @t D@ ""jun@"v3rs@ti @v "gda\textltailn sk | In maI fri taIm aI laIk t@ sw\super jIm @nd r2n In maI "t\super haUn} 
+\subsection{\textipa{ "p\super h@UlIS ""tr\ae n"skrIpS@n  tr\~a\~ws"kr1p\texttslig\super jja "pOlska}}
+\textipa{| lub\super jE \textctc \~E \ | dObZe bav\super ji\texttctclig | v S\textteshlig EgulnoC\texttctclig i gd1 jEstEm sam v klub\super jie| natOm\super jiast gd1 jEstEm v \textctc rud lu\textctdctzlig i zahovujE \textctc \~E bar\textdzlig O gZE\textteshlig \textltailn\super jE }
+
+\newpage
+\section{Syntax tree}
+\small I really think that you want to consume colorful green ideas. 
+
+\begin{tikzpicture}
+
+\Tree [.CP [.C' [.C {[-q]} ] ]
+[.TP [.NP [.N' [.N I ] ] 
+[.T' [.T {[-past]} ]
+[.VP 
+[.V' [.AdvP [.Adv' [.Adv really ] ] ]
+[.V' [.V think ] 
+[.CP [.C' [.C that ] 
+[.TP [.NP [.N' [.N you ] ] ] 
+[.T' [.T {[-past]} ] 
+[.VP [.V' [.V want ] 
+[.TP [.T' [.T to ] 
+[.VP [.V' [.V' [.V consume ] ] 
+[.NP \edge[roof]; {colorless green ideas}
+] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ]
+\end{tikzpicture}
+
+\newpage
+\section{Phonological rules}
+\subsection{Assimilation}
+\phonc{n}{place_{i}}{\phold
+\phonfeat[l]{-syllabic \\
+place_{i}}}
+
+\subsection{Velar fronting}
+\phonc{\phonfeat[l]{+dorsal \\ +consonantal}
+}{\phonfeat[l]{+front \\ -back}}{\phold
+\phonfeat[l]{+syllabic \\ +front}}
+
+
+\subsection{Final fricative devoicing}
+\phonb{\phonfeat[l]{-sonorant \\ +continuant}
+}{[-voice]}\phold {]}_{Utterance} 
+
+\section{Mathematical equation}
+
+\begin{math}
+G(z,w)=\sum_{i,j=0}^{\infty} g(i,j) \mathrm{z}^{i} \mathrm{w}^{j}
+\end{math}
+\newline
+\begin{spacing}{1.0}
+
+(from Mathematical Linguistics by Andras Kornai)
+\end{spacing}
+ 
+
+
+
+\end{document}

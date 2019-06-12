@@ -1,0 +1,70 @@
+\documentclass[]{article}
+\usepackage{qtree}
+\usepackage{phonrule}
+\usepackage{tipa}
+\usepackage{ulem}
+\usepackage{starfont}
+\usepackage{hieroglf}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\title{\LaTeX Homework}
+\author{Natalia Niemczyk}
+\date{May 2019}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{My favorite linguistics and computer science topics}
+\begin{enumerate}
+    \item Sentiment analysis
+    \item Web design    
+    \item Game development
+    \item Sociolinguistics
+    \item Phonology    
+    \item Cognitive linguistics
+\end{enumerate}
+\section{About me}
+\textipa{/maI neIm Iz \|[na\|[talja \ae nd aI stAdi n\ae tSr@l l\ae NgwIdZ pr@UsEsIN In g\|[daN\|[sk ||
+\newline aI h\ae v O:lweIz IndZOId lE:nIN nju: l\ae NgwIdZIz | IspES@li INglIS ||\newline
+aI TINk pr@Ugr\ae mIN Iz IntrIstIN \ae nd k\ae n bi: @ greIt aUtlEt fO: kri:eItIvIti ||\newline
+in\|[tErE\|[sujE \|[siE ruv\|[njE\:z \:s\|[tuk\~O | f \:s\texttoptiebar{t\:s}Egul\|[nOC\texttoptiebar{tC}ji fO\|[tOgrafj\~O Ora\|[s ilu\|[s\|[tra\texttoptiebar{ts}j\~O ||\newline
+ukON\texttoptiebar{t\:s}\textbari wam li\texttoptiebar{ts}Ewum pla\|[s\|[t\textbari \texttoptiebar{t\:s}\|[nE \|[s \|[t\textbari \|[tuwEm pla\|[s\|[t\textbari k \|[zE \|[spE\texttoptiebar{ts}jal\|[nOC\texttoptiebar{tC}i\~O fO\|[tOgrafja||/}
+
+\section{Sentence tree}
+Have you ever seen me bless the rains in Africa
+
+\Tree[.CP [.C' [.TP [.NP [.N' [.N you ] ] ] [.T' [.T \sout{have} ] [.VP [.V' [.AdvP [.Adv' [.Adv ever ] ] ] [.V' [.CP [.C' [.TP [.NP [.N' [.N me ] ] ] [.T' [.VP [.V' [.PP [.P' [\qroof{Africa}.NP ] [.P in ] ] ] [.V' [.DP [.D' [\qroof{rains}.NP ] [.D the ] ] ] [.V bless ] ] ] ] [.T pres. ] ] ] [.C decl. ] ] ] [.V seen ] ] ] ] ] ] [.C have ] ] ]
+
+\section{Phonological rules}
+\textbf{Tapping}\newline
+\phonb{[\textipa{t}]}{[\textipa{R}]}{\phonfeat{+vowel}}{\phonfeat{+vowel \\ -stress}}\newline
+\newline
+\textbf{Spirantization}\newline
+\phonb{\phonfeat{+stop \\ -voice}}{\phonfeat{+voice \\ -stop \\ +fricative}}{\phonfeat{+vowel}}{\phonfeat{+vowel}}
+\newline \newline
+\textbf{/\textipa{l}/ devoicing}\newline
+\phonb{/\textipa{l}/}{[\texttoptiebar{\textsubring{l}l}]}{\phonfeat{+consonant \\ -voice}}
+
+\section{Maths}
+\textbf{Probability of finding the particle at a node $n_i^{}$ at time $t$}
+\[ n_i^{(t)} = {\sum_{n_j^} \in V} n_j^{(t-1)} P(n_i^{} | n_j^{}) \]
+
+\section{CTAN is fun}
+Below I present some hieroglyphs.\newline\\
+{\pmhgfamily{\huge QWERTYUIOPAS\\DFGHJKLZXCVBNM\\qwertyuiopasdf\\ghjklzxcvbnm}}\newline\\
+And cartouches.\newline\newline\\
+{\huge \cartouche{\pmglyph{{A-i:w-a}}{\pmglyph{{Hi Ha He}}}}}\pagebreak
+
+Here are astrological signs and their symbols.\\
+{\centering
+$\mathcal{A}$ries \Aries \\ $\mathcal{T}$aurus \Taurus\\
+$\mathcal{G}$emini \Gemini\\$\mathcal{C}$ancer \Cancer \\ $\mathcal{L}$eo \Leo \\
+$\mathcal{V}$irgo \Virgo \\ $\mathcal{L}$ibra \Libra \\ $\mathcal{S}$corpio \Scorpio \\
+$\mathcal{S}$agittarius \Sagittarius\\ $\mathcal{C}$apricorn \Capricorn\\
+$\mathcal{A}$quarius \Aquarius \\ $\mathcal{P}$isces \Pisces\\} \\
+\break
+{\centering
+And the planets of Solar System orbiting the sun \Sun\\
+Mercury \Mercury\\ Venus \Venus \\ Earth \Earth \\ Mars \Mars \\ Jupiter \Jupiter \\
+Saturn \Saturn \\ Uranus \Uranus \\ Neptune \Neptune \\ Pluto \Pluto \\
+}
+\end{document}
